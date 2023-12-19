@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 .isi {
@@ -13,11 +14,8 @@ body {
 }
 
 .container {
-    margin-top: 4rem;
-    margin-right: 0;
-    margin-left: 5rem;
-    position: relative;
-    bottom: 70px;
+    margin-top: calc(10vw + 3vh - 6rem);
+    margin-left: calc(5vh + 2rem);
 }
 
 .Logo {
@@ -27,12 +25,11 @@ body {
 
 .ImageBackground {
     position: absolute;
-    right: 0;
     padding-left: 0;
     padding-top: 0;
-    top: 25px;
-    height: 650px;
-    width: 740px;
+    top: 10vh;
+    right: 6rem;
+    height: calc(40vw - 2rem);
 }
 
 .Text {
@@ -42,6 +39,11 @@ body {
 .HrefSignIn {
     text-decoration: none;
     color: #2494A2;
+    transition: 0.5s;
+}
+
+.HrefSignIn:hover {
+    text-decoration: underline;
 }
 
 .TextKecil, .SignIn {
@@ -74,13 +76,13 @@ body {
     bottom: 1rem;
 }
 
-.SignInSpan {
-    color: #2494A2;
+input {
+    font-family: Poppins, sans-serif;
 }
 
 .InputKiri, .InputKanan {
-    width: 177px;
-    height: 60px;
+    width: calc(12vw - 2rem);
+    height: calc(5vw - 2rem);
     margin-top: 2px;
     margin-bottom: 2px;
 }
@@ -107,6 +109,7 @@ body {
 }
 
 input {
+    border: 2px solid #D3EAEC;
     border-radius: 19px;
     background: #D3EAEC;
     border: none;
@@ -121,8 +124,7 @@ input {
 }
 
 input:focus {
-    background-color: #ffffff;
-    border: 2px solid #D3EAEC;
+    background-color: none;
     outline: none;
 }
 
@@ -130,6 +132,7 @@ input:focus {
     margin-top: 10px;
     margin-left: 1rem;
     border-radius: 60px;
+    border: 1px solid #2494A2;
     background: #2494A2;
     box-shadow: none;
     height: 60px;
