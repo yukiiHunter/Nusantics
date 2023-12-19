@@ -94,7 +94,7 @@ export default function Regist() {
 
     return (
         <>
-            <img src="/Assets/Image/Login/ImageLogin.png" alt="" className="ImageBackground" />
+            <img src="/Assets/Image/Login/login.png" alt="" className="ImageBackground" />
 
             <div className="isi">
                 <div className="container">
@@ -115,12 +115,12 @@ export default function Regist() {
                     <form>
                         <div className="Input">
                             <div className="InputKecil">
-                                <input type="text" id="username" className="InputKiri" placeholder="Username" required={true} onChange={handleInputChange} />
-                                <input type="text" id="fullname" className="InputKanan" placeholder="Fullname" required onChange={handleInputChange} />
+                                <input type="text" id="username" className="InputKiri" placeholder="Username" autocomplete="off" required={true} onChange={handleInputChange} />
+                                <input type="text" id="fullname" className="InputKanan" placeholder="Fullname" autocomplete="off" required onChange={handleInputChange} />
                             </div>
 
                             <div className="InputBesar">
-                                <input type="email" id="email" className="InputAtas" placeholder="Email" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" onChange={handleInputChange} />
+                                <input type="email" id="email" className="InputAtas" placeholder="Email" autocomplete="off" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" onChange={handleInputChange} />
                                 <input type="password" id="password" className="InputBawah" placeholder="Password" required minLength={6} onChange={handleInputChange} />
                                 <button type="button" className="SubmitBTN" onClick={notif}>Create account</button>
                             </div>
