@@ -1,0 +1,299 @@
+@media screen and (max-width: 1080px) {
+ 
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        overflow: auto;
+    }
+
+    .ImageBackground {
+        width: 100vw;
+        height: auto;
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: auto;
+        margin-left: auto; 
+        margin-right: 3vw; 
+        width: 90vw; 
+        height: 98vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+
+    .text1 {
+        height: 0;
+    }
+
+    .text1, .text3 {
+        font-size: 3vw;
+        font-weight: 400;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .text2 {
+        font-size: 7vw;
+        color: #2494A2;
+        width: 90vw;
+        position: relative;
+        margin: 0;
+        height: 22vw;
+        font-family: 'Poppins', sans-serif;
+        line-height: 9rem;
+    }
+
+    .text3 {
+        height: 22vw;
+    }
+
+    .HrefSignUp {
+        color: #2494A2;
+        text-decoration: none;
+    }
+
+    .Input1, .Input2 {
+        border: 2px solid #D3EAEC;
+        border-radius: 90px;
+        height: 12vw;
+        padding-left: 30px;
+        width: 88vw;
+        font-size: 3vw;
+        background-color: #D3EAEC;
+        margin-bottom: 29px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input:focus {
+        background-color: white;
+        outline: none;
+    }
+
+    .submit, .Garis, .ConnectWith, .Sosial {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: block;
+    }
+
+    .SubmitBTN {    
+        margin-bottom: 7vw;
+        margin-top: 5vw;
+        border-radius: 60px;
+        border: 1px solid #56BDA2;
+        background: #56BDA2;
+        box-shadow: none;
+        height: 10vw;
+        padding-top: 2.5vw;
+        padding-bottom: 2.5vw;
+        width: 30vw;
+        color: white;
+        border: none;
+        font-size: 3.5vw;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    button:hover {
+        background-color: white;
+        border: 1px solid #56BDA2;
+        color: #56BDA2;
+    }
+
+    hr {
+        width: 60vw;
+    }
+
+    .Sosial {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 7vw;
+        width: 60vw;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .ConnectWith {
+        font-size: 2.5vw;
+        margin-bottom: 50px;
+    }
+
+    .Icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #E2E2E2;
+        width: 12vw;
+        height: 12vw;
+        flex-shrink: 0;
+        margin-top: 20px;
+        margin-bottom: 9px;
+    }
+
+    .IconLogo {
+        padding-top: 3px;
+        width: 7vw;
+        height: 7vw;
+        flex-shrink: 0;
+    }
+
+    .Icon:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(37, 148, 162, 2);
+    }
+
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    body {
+        overflow: hidden;
+    }
+    .ImageBackground {
+        width: 100vw;
+        height: auto;
+        display: block;
+        position: relative;
+        left: -40vw; 
+        overflow: hidden;
+    }
+    
+    .container {
+        float: right;
+        position: absolute;
+        bottom: 20vw;
+        top: 6vw;
+        left: 60vw;
+    }
+
+    .Sosial {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 19vw;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .Icon {
+        margin-right: 40px;
+        position: relative;
+        left: 1.6vw;
+        margin-top: 20px;
+        margin-bottom: 9px;
+    }
+
+    .ConnectWith, .Sosial, hr {
+        position: relative;
+        bottom: 7vw;
+    }
+
+    .text1 {
+        height: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .text1, .text3 {
+        font-size: 1.6vw;
+        font-weight: 400;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .text2 {
+        font-size: 4vw;
+        color: #2494A2;
+        width: 30vw;
+        position: relative;
+        bottom: 1vw;
+        margin: 0;
+        height: 5vw;
+        font-family: 'Poppins', sans-serif;
+        line-height: 4rem;
+    }
+
+    .text3 {
+        position: relative;
+        bottom: 1.5vw;
+    }
+
+    .HrefSignUp {
+        color: #2494A2;
+        text-decoration: none;
+    }
+
+    .Input1, .Input2 {
+        border: 2px solid #D3EAEC;
+        border-radius: 90px;
+        height: 5vw;
+        display: block;
+        padding-left: 30px;
+        width: 32vw;
+        font-size: 1.5vw;
+        background-color: #D3EAEC;
+        margin-bottom: 21px;
+    }
+
+    .Input2 {
+        width: 16vw;
+        display: flex;
+    }
+
+    input:focus {
+        background-color: white;
+        outline: none;
+    }
+
+    .submit, .Garis, .ConnectWith, .Sosial {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: block;
+    }
+
+    .SubmitBTN {    
+        margin-top: 5vw;
+        border-radius: 60px;
+        border: 1px solid #56BDA2;
+        background: #56BDA2;
+        box-shadow: none;
+        height: 5vw;
+        padding-top: 1.2vw;
+        padding-bottom: 1.5vw;
+        width: 13vw;
+        color: white;
+        position: relative;
+        bottom: 12vw;
+        border: none;
+        left: 10vw;
+        font-size: 2vw;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    button:hover {
+        background-color: white;
+        border: 1px solid #56BDA2;
+        color: #56BDA2;
+    }
+
+    hr {
+        width: 30vw;
+        margin-bottom: 2vw;
+    }
+
+    .ConnectWith {
+        font-size: 1.5vw;
+    }
+
+    
+
+}
