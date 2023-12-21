@@ -1,5 +1,6 @@
 * {
     overflow: hidden;
+    font-family: Poppins, sans-serif;
 }
 
 body {
@@ -8,208 +9,218 @@ body {
     background-color: white;
 }
 
-.isi {
+.content {
     max-width: max-content;
     max-height: max-content;
 }
 
-.container {
-    margin-top: calc(10vw + 3vh - 6rem);
-    margin-left: calc(5vh + 2rem);
-}
-
-.Logo {
-    display: block;
-    position: absolute;
-}
+/* PAGE IMAGE */
 
 .ImageBackground {
     position: absolute;
     padding-left: 0;
     padding-top: 0;
-    top: 10vh;
-    right: 6rem;
-    height: calc(40vw - 2rem);
+    top: 12.5vh; 
+    right: calc(2vw + 1rem);
+    height: calc(35vw + 5vh - 2rem);
 }
 
-.Text {
-    margin-left: 1rem;
+/* FORM CONTAINER */
+
+.container {
+    margin-left: calc(2vw + 2rem);
 }
 
-.HrefSignIn {
-    text-decoration: none;
+.sm-txt {
+    font-size: calc(0.5vw + 0.4rem);
+    font-weight: 400;
+    display: flex;
+    color: black;
+}
+
+.sm-txt a {
     color: #2494A2;
-    transition: 0.5s;
+    text-decoration: none;
+    margin-left: 0.5rem;
 }
 
-.HrefSignIn:hover {
+.sm-txt a:hover {
     text-decoration: underline;
 }
 
-.TextKecil, .SignIn {
-    padding-left: 5px;
-    opacity: 0.75;
-    font-family: 'Poppins', sans-serif;
-}
-
-.TextKecil {
-    display: flex;
-    position: relative;
-    top: 55px;
-    padding-bottom: 10px;
-    font-size: smaller;
-    font-family: 'Poppins', sans-serif;
-}
-
-.TextBesar {
-    display: flex;
-    position: relative;
-    font-size: xx-large;
-    margin-bottom: -20px;
-    font-family: 'Poppins', sans-serif;
+.lg-txt {
     font-weight: 600;
-    color: #2494A2;
-}
-
-.SignIn {
-    position: relative;
-    bottom: 1rem;
-}
-
-input {
-    font-family: Poppins, sans-serif;
-}
-
-.InputKiri, .InputKanan {
-    width: calc(12vw - 2rem);
-    height: calc(5vw - 2rem);
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-.InputKiri {
-    margin-right: 15px;
-}
-
-.InputAtas, .InputBawah {
-    height: 60px;
-    width: 430px;
-}
-
-.InputAtas {
+    font-size: calc(2.5vw + 0.5rem);
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.InputBawah {
-    margin-bottom: 20px;
-    width: 187px;
-    margin-right: 15px;
-}
-
-input {
-    border: 2px solid #D3EAEC;
-    border-radius: 19px;
-    background: #D3EAEC;
-    border: none;
-}
-
-.InputAtas, .InputBawah, .InputKanan, .InputKiri {
-    opacity: 1;
-    color: #1d1d1d;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-input:focus {
-    background-color: none;
-    outline: none;
-}
-
-.SubmitBTN {
-    margin-top: 10px;
-    margin-left: 1rem;
-    border-radius: 60px;
-    border: 1px solid #2494A2;
-    background: #2494A2;
-    box-shadow: none;
-    height: 60px;
-    padding-top: 17px;
-    padding-bottom: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
-    width: 210px;
-    color: white;
-    border: none;
-    font-size: medium;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-}
-
-.SubmitBTN:hover {
-    background-color: white;
-    border: 1px solid #2494A2;
     color: #2494A2;
-    cursor: pointer;
+    line-height: 3.4rem;
+    margin-top: -10vh;
+    position: relative;
+    top: 2%;
+    left: 2%;
 }
 
-.SubmitBTN:active {
-    background-color: white;
-    border: 1px solid #2494A2;
-    color: #2494A2;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(37, 148, 162, 2);
+/* FORM CONTENT */
+
+.form {
+    min-width: 30%;
+    max-width: 100%;
+    width: calc(30vw + 2.5rem);
+    height: 100vh;
+    
+    display: flex;
+    padding: 0 2rem;
+    margin-left: 2.5vw;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-
-.Garis {
-    width: 500px;
-    margin: 0 auto; 
-    stroke: rgba(0, 0, 0, 0.50);
-}
-
-.ConnectWith {
-    text-align: center;
-    margin-bottom: 1px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.Sosial {
+.field-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-    width: 300px;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: center;
 }
 
-.Icon {
+.field {
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: #2493a236;
+    border-radius: 1rem;
+    width: 100%;
+    margin: 10px;
+    color: black;
+    font-size: calc(0.35vw + 0.4rem);
+}
+
+#submit {
+    background-color: #56BDA2;
+    color: white;
+    border: 2px solid #56BDA2;
+    border-radius: calc(1.8vw + 2rem);
+    font-size: 1vw;
+    padding: 1rem 2rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#submit:hover {
+    border: 2px solid #56BDA2;
+    background: none;
+    color: #56BDA2;
+}
+
+hr {
+    height: 1px;
+    width: 60%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 5vh;
+}
+
+#conn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: calc(0.5vw + 0.4rem);
+    font-weight: 400;
+}
+
+/* SOCIAL MEDIA */
+
+.connect {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: space-evenly; 
+    width: 60%;
+    margin-left: 19%;
+    padding: 0.5rem;
+}
+
+.icon {
+    padding: 1rem;
+    height: calc(0.5vh + 1rem);
+    width: calc(0.2vw + 1.2rem);
+    background-color: #E2E2E2;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #E2E2E2;
-    width: 59px;
-    height: 59px;
-    flex-shrink: 0;
-    margin-right: 9px;
-    margin-left: 9px;
-    margin-top: 20px;
-    margin-bottom: 9px;
-}
-
-.IconLogo {
-    padding-top: 3px;
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-}
-
-.Icon:hover {
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+}
+
+.icon:hover {
     box-shadow: 0 0 10px rgba(37, 148, 162, 2);
 }
 
+
+/* MOBILE DISPLAY */
+
+body {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1080px) {
+    .ImageBackground {
+        content: url('/Assets/Image/Login/login (1).png');
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+        top: 0;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        background-color: white;
+    }
+
+    .sm-txt {
+        font-size: calc(1.5vw + 0.8rem);
+    }
+
+    .lg-txt {
+        font-size: calc(6vw + 2rem);
+        line-height: 5vh;
+    }
+
+    .form {
+        position: absolute;
+        left: 0;
+        padding-top: 6vh;
+        margin-left: 6%;
+        height: 65%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .field {
+        height: calc(4vw + 1rem);
+        font-size: calc(1.5vw + 0.5rem);
+        border-radius: 2vh;
+    }
+
+    #submit {
+        height: calc(6vw + 2.5rem);
+        font-size: calc(1.5vw + 0.5rem);
+    }
+
+    hr {
+        margin-top: 3vh;
+    }
+
+    #conn {
+        font-size: calc(1.5vw + 0.8rem);
+    }
+
+    .icon {
+        width: 6vw;
+        height: 3vh;
+    }
+
+}
