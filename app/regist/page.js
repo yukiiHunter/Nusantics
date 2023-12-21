@@ -96,54 +96,44 @@ export default function Regist() {
         <>
             <img src="/Assets/Image/Login/login.png" alt="" className="ImageBackground" />
 
-            <div className="isi">
+            <div className="content">
                 <div className="container">
-                    <div className="Text">
-                        <div className="TextKecil">
-                            <p>START FOR FREE</p>
-                        </div>
 
-                        <div className="TextBesar">
-                            <h2 className="font">Create new account</h2>
-                        </div>
+                    <div className="form">
+                        <h1 className="lg-txt">
+                            <span className="sm-txt">START FOR FREE</span>
+                            Create new account
+                            <span className="sm-txt">Already A Member? <a href="">Sign In</a></span>
+                        </h1>
 
-                        <div className="SignIn">
-                            <p>Already A Member? <a href='' className='HrefSignIn'>Sign In</a></p>
+                        <div className="field-wrapper">
+                            <input type="text" className="field" id="username" placeholder="Username" autoComplete="off" required={true} onChange={handleInputChange} />
+                            <input type="text" className="field" id="fullname" placeholder="Fullname" autoComplete="off" required onChange={handleInputChange} />
+                        </div>
+                        <div className="field-wrapper">
+                            <input type="email" className="field" id="email" placeholder="Email" autoComplete="off" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" onChange={handleInputChange} />
+                        </div>
+                        <div className="field-wrapper">
+                            <input type="password" className="field" id="password" placeholder="Password" required minLength={6} onChange={handleInputChange} />
+                            <input type="submit" className="field" id="submit" value="Create Account" onClick={notif} />
+                        </div>
+                        
+                        <hr/>   
+                        <h3 className="sm-txt" id="conn">Or Connect With</h3>
+
+                        <div className="connect">
+                        <div className="icon">
+                            <img src="/Assets/Image/Login/google.png" alt="" />
+                        </div>
+                        <div className="icon">
+                            <img src="/Assets/Image/Login/facebook.png" alt="" />
+                        </div>
+                        <div className="icon">
+                            <img src="/Assets/Image/Login/github.png" alt="" />
                         </div>
                     </div>
-
-                    <form>
-                        <div className="Input">
-                            <div className="InputKecil">
-                                <input type="text" id="username" className="InputKiri" placeholder="Username" autocomplete="off" required={true} onChange={handleInputChange} />
-                                <input type="text" id="fullname" className="InputKanan" placeholder="Fullname" autocomplete="off" required onChange={handleInputChange} />
-                            </div>
-
-                            <div className="InputBesar">
-                                <input type="email" id="email" className="InputAtas" placeholder="Email" autocomplete="off" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" onChange={handleInputChange} />
-                                <input type="password" id="password" className="InputBawah" placeholder="Password" required minLength={6} onChange={handleInputChange} />
-                                <button type="button" className="SubmitBTN" onClick={notif}>Create account</button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <svg className='Garis' xmlns="http://www.w3.org/2000/svg" width="290" height="2" viewBox="0 0 290 2" fill="none">
-                        <path d="M290 1L1.12057e-05 1" stroke="black" stroke-opacity="0.5" stroke-width="1"/>
-                    </svg>
-
-                    <p className="ConnectWith">Or Connect With</p>
-
-                    <div className="Sosial">
-                        <a href="#" className="Icon">
-                            <img src="/Assets/Image/Login/google.png" className='IconLogo' alt="" />
-                        </a>
-                        <a href="#" className="Icon">
-                            <img src="/Assets/Image/Login/facebook.png" className='IconLogo' alt="" />
-                        </a>
-                        <a href="#" className="Icon">
-                            <img src="/Assets/Image/Login/github.png" className='IconLogo' alt="" />
-                        </a>
                     </div>
+                    
                 </div>
 
                 <ToastContainer
